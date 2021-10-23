@@ -105,9 +105,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 9013275126971308093}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53df128d91f486943a89d8591cef50c8, type: 3}
+  m_Script: {fileID: 11500000, guid: a49bcfe514c62a0488b8aee2e01af5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nota: {fileID: 8300000, guid: cc01a8e0f9e556e45a2ceb925fdf36fc, type: 3}
-  respuesta: Europa
+  nota: {fileID: 0}
+  respuesta: 
   tecla: 
