@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Tecla : MonoBehaviour
 {
-    public string Nota;
-    public string Respuesta;
-
+    public AudioClip nota;
+    public string respuesta;
+    public string tecla;
 
 
     // Start is called before the first frame update
