@@ -15,8 +15,16 @@ public class GameLogic : MonoBehaviour
 
     Tecla[] teclado;
     Tecla teclaWena;
-    string[] preguntas;
-    string[] respuestas;
+    string[] preguntas = {  "Australia", "Egipto", "Japón", "Oceania", "America",                                       // Estrofa 1
+                            "Ghana", "Islas Salomón", "Alemania", "España", "Argentina", "Serbia", "Samoa", "Brasil",   // Estrofa 2
+                            "Nueva Zelanda", "Libia", "Nepal", "Palaos", "Canadá",                                      // Estrofa 3
+                            "Egipto", "Kiribati", "República Checa", "Guatemala", "Austria", "Nauru", "Estados Unidos" };
+
+    string[] respuestas = { "oc", "af", "as", "oc", "am",                   // Estrofa 1
+                            "af", "oc", "eu", "eu", "am", "eu", "oc", "am", // Estrofa 2
+                            "oc", "af", "as", "oc", "am",                   // Estrofa 3
+                            "af", "oc", "eu", "am", "eu", "oc", "am"};      // Estrofa 4
+
     public AudioSource altavos;
     StateMachine state;
     int preguntaActual;
