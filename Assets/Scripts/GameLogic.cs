@@ -13,7 +13,7 @@ public class GameLogic : MonoBehaviour
         FinishGame
     }
 
-    Tecla[] teclado;
+    public Tecla[] teclado;
     Tecla teclaWena;
     string[] preguntas = {  "Australia", "Egipto", "Japón", "Oceania", "America",                                       // Estrofa 1
                             "Ghana", "Islas Salomón", "Alemania", "España", "Argentina", "Serbia", "Samoa", "Brasil",   // Estrofa 2
@@ -59,8 +59,10 @@ public class GameLogic : MonoBehaviour
                 state = StateMachine.WaitAnswer;
                 break;
             case StateMachine.WaitAnswer:
-                if (Input.GetKey(teclaWena.tecla) && respuestas[preguntaActual] == teclaWena.respuesta)
+                Debug.Log(Input.GetKeyUp(teclaWena.tecla));
+                if (Input.GetKeyUp(teclaWena.tecla) && respuestas[preguntaActual] == teclaWena.respuesta)
                 {
+                    Debug.Log("Apretada");
                     state = StateMachine.GoodAnswer;
                 }
              
