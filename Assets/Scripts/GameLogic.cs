@@ -69,13 +69,13 @@ public class GameLogic : MonoBehaviour
                 break;
             case StateMachine.GoodAnswer:
                 // Sale un mensaje en pantalla y pasa a la siguiente pregunta
-                if (preguntas.Length < preguntaActual)
+                ++preguntaActual;
+                if (preguntas.Length <= preguntaActual)
                 {
                     state = StateMachine.FinishGame;
                 }
                 else
                 {
-                    ++preguntaActual;
                     state = StateMachine.LoadQuestion;
                 }
                 break;
