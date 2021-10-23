@@ -52,6 +52,7 @@ public class GameLogic : MonoBehaviour
                         teclaWena = t;
                         //Reproducir nota correcta
                         altavos.clip = t.nota;
+                        altavos.Play();
                     }
                 }
 
@@ -59,17 +60,16 @@ public class GameLogic : MonoBehaviour
                 state = StateMachine.WaitAnswer;
                 break;
             case StateMachine.WaitAnswer:
-                Debug.Log(Input.GetKeyUp(teclaWena.tecla));
+                
                 if (Input.GetKeyUp(teclaWena.tecla) && respuestas[preguntaActual] == teclaWena.respuesta)
                 {
-                    Debug.Log("Apretada");
                     state = StateMachine.GoodAnswer;
                 }
              
                 break;
             case StateMachine.GoodAnswer:
                 // Sale un mensaje en pantalla y pasa a la siguiente pregunta
-                if (preguntas.Length >= preguntaActual)
+                if (preguntas.Length < preguntaActual)
                 {
                     state = StateMachine.FinishGame;
                 }
