@@ -66,7 +66,6 @@ public class GameLogic : MonoBehaviour
                 if (Input.GetKeyUp(teclaWena.tecla) && respuestas[preguntaActual] == teclaWena.respuesta)
                 {
                     teclaWena.GetComponent<MeshRenderer>().material = goodGreen;
-                    state = StateMachine.GoodAnswer;
                     //teclaWena.GetComponent<MeshRenderer>().material = original;
                     StartCoroutine(waitingGoodChoice());
                 }
@@ -92,7 +91,8 @@ public class GameLogic : MonoBehaviour
     }
     IEnumerator waitingGoodChoice() {
         Tecla toChange = teclaWena;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.3f);
         toChange.GetComponent<MeshRenderer>().material = original;
+        state = StateMachine.GoodAnswer;
     }
 }

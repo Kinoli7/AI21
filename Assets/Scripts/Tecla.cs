@@ -7,7 +7,7 @@ public class Tecla : MonoBehaviour
     public AudioClip nota;
     public string respuesta;
     public string tecla;
-
+    public AudioSource altavosTecla;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +21,8 @@ public class Tecla : MonoBehaviour
         if (Input.GetKeyDown(tecla))
         {
             transform.Rotate(-15, 0, 0, Space.Self);
+            altavosTecla.clip = nota;
+            altavosTecla.Play();
         }
         else if (Input.GetKeyUp(tecla))
         {

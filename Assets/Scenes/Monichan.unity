@@ -496,6 +496,10 @@ PrefabInstance:
       propertyPath: respuesta
       value: eu
       objectReference: {fileID: 0}
+    - target: {fileID: 3363909438120787347, guid: 29e37d97c12a9d140b16029cb5fc9e0e, type: 3}
+      propertyPath: altavosTecla
+      value: 
+      objectReference: {fileID: 101516666}
     - target: {fileID: 9013275126971308093, guid: 29e37d97c12a9d140b16029cb5fc9e0e, type: 3}
       propertyPath: m_Name
       value: TeclaLa
@@ -829,6 +833,8 @@ MonoBehaviour:
   - {fileID: 1447726316}
   altavos: {fileID: 101516666}
   preguntaEnPantalla: {fileID: 1040504603}
+  goodGreen: {fileID: 2100000, guid: 8da863f08b54eb24ba1899c2043c7ef6, type: 2}
+  original: {fileID: 2100000, guid: f297cde9c0eded64db4886f1b3717bb9, type: 2}
 --- !u!4 &802199652
 Transform:
   m_ObjectHideFlags: 0
@@ -1020,6 +1026,10 @@ PrefabInstance:
       propertyPath: respuesta
       value: am
       objectReference: {fileID: 0}
+    - target: {fileID: 3363909438120787347, guid: 29e37d97c12a9d140b16029cb5fc9e0e, type: 3}
+      propertyPath: altavosTecla
+      value: 
+      objectReference: {fileID: 101516666}
     - target: {fileID: 9013275126971308093, guid: 29e37d97c12a9d140b16029cb5fc9e0e, type: 3}
       propertyPath: m_Name
       value: TeclaSol
@@ -1427,6 +1437,10 @@ PrefabInstance:
       propertyPath: respuesta
       value: af
       objectReference: {fileID: 0}
+    - target: {fileID: 3363909438120787347, guid: 29e37d97c12a9d140b16029cb5fc9e0e, type: 3}
+      propertyPath: altavosTecla
+      value: 
+      objectReference: {fileID: 101516666}
     - target: {fileID: 9013275126971308093, guid: 29e37d97c12a9d140b16029cb5fc9e0e, type: 3}
       propertyPath: m_Name
       value: TeclaDo
@@ -1496,6 +1510,10 @@ PrefabInstance:
       propertyPath: respuesta
       value: as
       objectReference: {fileID: 0}
+    - target: {fileID: 3363909438120787347, guid: 29e37d97c12a9d140b16029cb5fc9e0e, type: 3}
+      propertyPath: altavosTecla
+      value: 
+      objectReference: {fileID: 101516666}
     - target: {fileID: 9013275126971308093, guid: 29e37d97c12a9d140b16029cb5fc9e0e, type: 3}
       propertyPath: m_Name
       value: TeclaRe
@@ -2082,6 +2100,10 @@ PrefabInstance:
       propertyPath: respuesta
       value: oc
       objectReference: {fileID: 0}
+    - target: {fileID: 3363909438120787347, guid: 29e37d97c12a9d140b16029cb5fc9e0e, type: 3}
+      propertyPath: altavosTecla
+      value: 
+      objectReference: {fileID: 101516666}
     - target: {fileID: 9013275126971308093, guid: 29e37d97c12a9d140b16029cb5fc9e0e, type: 3}
       propertyPath: m_Name
       value: TeclaSi
