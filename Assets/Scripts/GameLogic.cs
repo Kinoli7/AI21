@@ -29,6 +29,8 @@ public class GameLogic : MonoBehaviour
     StateMachine state;
     int preguntaActual;
     public Text preguntaEnPantalla;
+    public Material goodGreen;
+    public Material original;
 
     // Start is called before the first frame update
     void Start()
@@ -63,9 +65,11 @@ public class GameLogic : MonoBehaviour
                 
                 if (Input.GetKeyUp(teclaWena.tecla) && respuestas[preguntaActual] == teclaWena.respuesta)
                 {
+                    teclaWena.GetComponent<MeshRenderer>().material = goodGreen;
                     state = StateMachine.GoodAnswer;
+                    //teclaWena.GetComponent<MeshRenderer>().material = original;
+                    StartCoroutine(waitingGoodChoice());
                 }
-             
                 break;
             case StateMachine.GoodAnswer:
                 // Sale un mensaje en pantalla y pasa a la siguiente pregunta
@@ -85,5 +89,10 @@ public class GameLogic : MonoBehaviour
             default:
                 break;
         }
+    }
+    IEnumerator waitingGoodChoice() {
+        Tecla toChange = teclaWena;
+        yield return new WaitForSeconds(0.2f);
+        toChange.GetComponent<MeshRenderer>().material = original;
     }
 }
