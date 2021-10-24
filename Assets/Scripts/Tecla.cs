@@ -18,7 +18,14 @@ public class Tecla : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(tecla))
+        {
+            transform.Rotate(-15, 0, 0, Space.Self);
+        }
+        else if (Input.GetKeyUp(tecla))
+        {
+            transform.Rotate(15, 0, 0, Space.Self);
+        }
     }
 
 }
